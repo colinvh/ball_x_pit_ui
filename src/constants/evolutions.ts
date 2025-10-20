@@ -1,4 +1,4 @@
-import type { Balls } from '../types/ballIcons.js';
+import type { Balls } from '../types/ballIcons.ts';
 
 export const advancedEvolutions: [Balls, Balls, Balls][] = [
   ['bomb', 'poison', 'nuclearBomb'],

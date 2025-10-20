@@ -1,9 +1,9 @@
 <script>
-  import { evolutions } from "../../constants/evolutions.js";
-  import { starterBalls } from "../../constants/starterBalls.js";
-  import assetMap from "../assetMap.js";
-  import GridItem from "./GridItem.svelte";
+  import { evolutions } from "../../constants/evolutions.ts";
+  import { starterBalls } from "../../constants/starterBalls.ts";
+  import assetMap from "../assetMap.ts";
   import GridIcon from "./GridIcon.svelte";
+  import GridItem from "./GridItem.svelte";
 
   const { gridSize = 16 } = $props();
 
@@ -24,17 +24,17 @@
         {#if cell.x === cell.y}
           <span style="color: var(--yellow); font-size: 2em;">X</span>
         {:else if cell.x === 0}
-          <GridIcon 
+          <GridIcon
             src={assetMap.ballIcons[yBall]}
             alt={`${cell.x}, ${cell.y}`}
           />
         {:else if cell.y === 0}
-          <GridIcon 
+          <GridIcon
             src={assetMap.ballIcons[xBall]}
             alt={`${cell.x}, ${cell.y}`}
           />
         {:else if evolution}
-          <GridIcon 
+          <GridIcon
             src={assetMap.ballIcons[evolution]}
             alt={`${cell.x}, ${cell.y}`}
           />
