@@ -1,23 +1,22 @@
 <script>
-  export let x = 0;
-  export let y = 0;
-  export let content = "";
+  const { children = null, x, y } = $props();
 
-  $: cellClasses = [
-    "w-12 h-12",
-    "flex items-center justify-center",
-    "transition-all duration-200",
-    "select-none",
-    "text-sm font-medium",
-    "border border-gray-300",
-    "hover:bg-[var(--bg-dark-hover)]",
-    "bg-white",
-    content ? "text-gray-800" : "text-gray-400",
-  ]
-    .filter(Boolean)
-    .join(" ");
+  const _cellClasses = $derived(
+    [
+      "w-13 h-13",
+      "flex items-center justify-center",
+      "transition-all duration-200",
+      "select-none",
+      "text-sm font-medium",
+      "border border-[var(--border-dark)]",
+      "hover:bg-[var(--bg-dark-hover)]",
+      children ? "text-gray-800" : "text-gray-400",
+    ]
+      .filter(Boolean)
+      .join(" ")
+  );
 </script>
 
-<div class={cellClasses} role="gridcell" title="({x}, {y})">
-  {content || `${x},${y}`}
+<div class={_cellClasses} role="gridcell" title="({x}, {y})">
+  {@render children()}
 </div>

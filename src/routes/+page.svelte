@@ -1,24 +1,90 @@
 <script>
   import GridItem from "$lib/components/GridItem.svelte";
+  import assetMap from "$lib/assetMap.js";
+  import { starterBalls } from "../constants/starterBalls.js";
 
-  // Create a 5x5 grid for demonstration
-  const gridSize = 5;
-  $: grid = Array.from({ length: gridSize }, (_, y) =>
-    Array.from({ length: gridSize }, (_, x) => ({ x, y }))
+  const gridSize = 16;
+  const grid = $derived(
+    Array.from({ length: gridSize }, (_, y) =>
+      Array.from({ length: gridSize }, (_, x) => ({ x, y }))
+    )
   );
 </script>
 
-<div class="mt-8">
-  <h1 class="text-2xl font-bold mb-4 text-white">BALL x PIT Evolution Chart</h1>
-  <p class="mb-4 text-gray-400">
+<div class="mt-8 flex flex-col items-center">
+  <h1 class="text-2xl font-bold mb-4 text-white text-center">
+    BALL x PIT Evolution Chart
+  </h1>
+  <p class="mb-4 text-gray-400 text-center">
     Hover over cells to display more information.
   </p>
 
-  <div class="grid grid-cols-5 gap-0 w-fit border-1 border-gray-400 p-2">
+  <div class="grid grid-cols-16 gap-0 w-fit p-2">
     {#each grid as row}
       {#each row as cell}
-        <GridItem x={cell.x} y={cell.y} />
+        <GridItem x={cell.x} y={cell.y}>
+          {#if cell.x === cell.y}
+            X
+          {:else if cell.x === 0}
+            <div class="flex flex-col items-center">
+              <img
+                src={assetMap.ballIcons[starterBalls[cell.y - 1]]}
+                alt={`${cell.x}, ${cell.y}`}
+                class="w-12 h-12 rounded border border-[var(--border-dark)]"
+              />
+            </div>
+          {:else if cell.y === 0}
+            <div class="flex flex-col items-center">
+              <img
+                src={assetMap.ballIcons[starterBalls[cell.x - 1]]}
+                alt={`${cell.x}, ${cell.y}`}
+                class="w-12 h-12 rounded border border-[var(--border-dark)]"
+              />
+            </div>
+          {:else}{/if}
+        </GridItem>
       {/each}
     {/each}
+  </div>
+
+  <!-- Asset Map Demo -->
+  <div class="mt-8 space-y-6">
+    <h2 class="text-lg font-bold text-white">Asset Map Demo:</h2>
+
+    <!-- All Ball Icons using Object.entries() -->
+    <div>
+      <h3 class="text-md font-semibold text-gray-300 mb-2">All Ball Icons:</h3>
+      <div class="grid grid-cols-8 gap-4">
+        {#each Object.entries(assetMap.ballIcons) as [key, imagePath]}
+          <div class="flex flex-col items-center">
+            <img
+              src={imagePath}
+              alt={key}
+              class="w-12 h-12 rounded border border-[var(--border-dark)]"
+            />
+            <span class="text-xs text-gray-400 mt-1 text-center">{key}</span>
+          </div>
+        {/each}
+      </div>
+    </div>
+
+    <!-- Using Object.keys() method -->
+    <div>
+      <h3 class="text-md font-semibold text-gray-300 mb-2">
+        First 10 Icons (using Object.keys()):
+      </h3>
+      <div class="flex gap-4 items-center flex-wrap">
+        {#each Array.from(starterBalls) as key}
+          <div class="flex flex-col items-center">
+            <img
+              src={assetMap.ballIcons[key]}
+              alt={key}
+              class="w-12 h-12 rounded border border-[var(--border-dark)]"
+            />
+            <span class="text-xs text-gray-400 mt-1">{key}</span>
+          </div>
+        {/each}
+      </div>
+    </div>
   </div>
 </div>

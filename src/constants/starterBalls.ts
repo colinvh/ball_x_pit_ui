@@ -1,0 +1,18 @@
+import type { BallIconKey } from '../types/ballIcons.ts';
+
+export const starterBalls: BallIconKey[] = [
+  'bleed',
+  'broodMother',
+  'burn',
+  'cell',
+  'dark',
+  'earthquake',
+  'eggSac',
+  'ghost',
+  'iron',
+  'laserHorizontal',
+  'laserVertical',
+  'light',
+  'poison',
+  'wind'
+];
