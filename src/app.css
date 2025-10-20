@@ -1,2 +1,9 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin '@tailwindcss/typography';
+
+:root {
+	--bg-dark: #271217;
+	--bg-dark-hover: #452a30;
+
+	background: var(--bg-dark);
+}
