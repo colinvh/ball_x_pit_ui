@@ -55,7 +55,7 @@ export const assetMap = {
     vampireLord: '/assets/ball_icon_vampire_lord.png',
     blackHole: '/assets/ball_icon_black_hole.png',
     flicker: '/assets/ball_icon_flicker.png',
-    charm: '/assets/ball_icon_love_charm.png',
+    charm: '/assets/ball_icon_charm.png',
     lovestruck: '/assets/ball_icon_lovestruck.png',
     noxious: '/assets/ball_icon_noxious.png',
     virus: '/assets/ball_icon_virus.png',
