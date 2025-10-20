@@ -58,7 +58,7 @@ export const assetMap = {
     charm: '/assets/ball_icon_love_charm.png',
     lovestruck: '/assets/ball_icon_lovestruck.png',
     noxious: '/assets/ball_icon_noxious.png',
-    vrius: '/assets/ball_icon_vrius.png',
+    virus: '/assets/ball_icon_virus.png',
     lightningRod: '/assets/ball_pit_lightning_rod.png'
   }
 };
