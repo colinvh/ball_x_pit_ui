@@ -44,6 +44,7 @@ export const assetMap = {
     incubus: '/assets/ball_icon_incubus.png',
     leech: '/assets/ball_icon_leech.png',
     maggot: '/assets/ball_icon_maggot.png',
+    mosquitoSwarm: '/assets/ball_icon_mosquito_swarm.png',
     mosquitoKing: '/assets/ball_icon_mosquito_king.png',
     nosferatu: '/assets/ball_icon_nosferatu.png',
     phantom: '/assets/ball_icon_phantom.png',
