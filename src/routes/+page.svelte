@@ -1,7 +1,8 @@
 <script>
   import GridItem from "$lib/components/GridItem.svelte";
   import assetMap from "$lib/assetMap.js";
-  import { starterBalls } from "../constants/starterBalls.js";
+  import { starterBalls } from "../constants/starterBalls.ts";
+  import { evolutions } from "../constants/evolutions.ts";
 
   const gridSize = 16;
   const grid = $derived(
@@ -9,6 +10,8 @@
       Array.from({ length: gridSize }, (_, x) => ({ x, y }))
     )
   );
+
+  console.log({ evolutions });
 </script>
 
 <div class="mt-8 flex flex-col items-center">

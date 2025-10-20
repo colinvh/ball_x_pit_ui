@@ -1,10 +1,13 @@
 import type { Balls } from '../types/ballIcons.js';
 
-export const advancedEvolutions: ([Balls, Balls, Balls] | [Balls, Balls, Balls, Balls])[] = [
+export const advancedEvolutions: [Balls, Balls, Balls][] = [
   ['bomb', 'poison', 'nuclearBomb'],
   ['incubus', 'succubus', 'satan'],
   ['maggot', 'cell', 'spiderQueen'],
-  ['dark', 'sun', 'blackHole'],
+  ['dark', 'sun', 'blackHole']
+];
+
+export const multipleAdvancedEvolutions: [Balls, Balls, Balls, Balls][] = [
   ['vampireLord', 'mosquitoKing', 'spiderQueen', 'nosferatu']
 ];
 
@@ -62,25 +65,27 @@ export const basicEvolutions: [Balls, Balls, Balls][] = [
   ['poison', 'wind', 'noxious']
 ];
 
-export const evolutions = {
-  bleed: {
-    broodMother: {
-      evolution: 'bleed'
+function buildEvolutionMap() {
+  const evolutionMap: Partial<Record<Balls, Partial<Record<Balls, Record<'evolution', Balls>>>>> =
+    {};
+
+  const allEvolutions = [...basicEvolutions, ...advancedEvolutions];
+
+  for (const [ball1, ball2, result] of allEvolutions) {
+    if (!evolutionMap[ball1]) {
+      evolutionMap[ball1] = {};
     }
-  },
-  broodMother: {},
-  burn: {},
-  cell: {},
-  dark: {},
-  earthquake: {},
-  eggSac: {},
-  ghost: {},
-  iron: {},
-  laserHorizontal: {},
-  laserVertical: {},
-  light: {},
-  lightning: {},
-  poison: {},
-  vampire: {},
-  wind: {}
-} satisfies Partial<Record<Balls, Partial<Record<Balls, Record<'evolution', Balls>>>>>;
+    evolutionMap[ball1]![ball2] = { evolution: result };
+
+    if (!evolutionMap[ball2]) {
+      evolutionMap[ball2] = {};
+    }
+    evolutionMap[ball2]![ball1] = { evolution: result };
+  }
+
+  return evolutionMap;
+}
+
+export const evolutions = buildEvolutionMap() satisfies Partial<
+  Record<Balls, Partial<Record<Balls, Record<'evolution', Balls>>>>
+>;
