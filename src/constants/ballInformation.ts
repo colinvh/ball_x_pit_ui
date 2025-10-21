@@ -111,7 +111,7 @@ export const ballInformation: Record<Balls, BallInfo> = {
   mosquitoKing: {
     name: 'Mosquito King',
     description:
-      'Spawns a mosquito each time it hits an enemy. Mosquitos attack a random enemy, dealing 80-120 damage each. If a mosquito kills an enemy, they stal 1 health.'
+      'Spawns a mosquito each time it hits an enemy. Mosquitos attack a random enemy, dealing 80-120 damage each. If a mosquito kills an enemy, they steal 1 health.'
   },
   mosquitoSwarm: {
     name: 'Mosquito Swarm',
@@ -126,7 +126,7 @@ export const ballInformation: Record<Balls, BallInfo> = {
   nuclearBomb: {
     name: 'Nuclear Bomb',
     description:
-      'Explodes when hittin an enemy, dealing 300-500 damage to nearby enemies and applying 1 stack of radiation to everyone present indefinitely (max 5 stacks). Each stack of radiation increases damage received by 10%. Has a 3 second cooldown.'
+      'Explodes when hitting an enemy, dealing 300-500 damage to nearby enemies and applying 1 stack of radiation to everyone present indefinitely (max 5 stacks). Each stack of radiation increases damage received by 10%. Has a 3 second cooldown.'
   },
   overgrowth: {
     name: 'Overgrowth',
@@ -151,7 +151,7 @@ export const ballInformation: Record<Balls, BallInfo> = {
   sandstorm: {
     name: 'Sandstorm',
     description:
-      'Goes through enemies and is surrounded by a ragaing storm dealing 10-20 damage per second and blinding nearby enemies for 3 seconds.'
+      'Goes through enemies and is surrounded by a raging storm dealing 10-20 damage per second and blinding nearby enemies for 3 seconds.'
   },
   satan: {
     name: 'Satan',
@@ -166,7 +166,7 @@ export const ballInformation: Record<Balls, BallInfo> = {
   soulSucker: {
     name: 'Soul Sucker',
     description:
-      'Passes through enemies and saps them, with a 30% chance to stealing 1 health and reducing their attack damage by 20%. Lifesteal chance only applies once per enemy.'
+      'Passes through enemies and saps them, with a 30% chance of stealing 1 health and reducing their attack damage by 20%. Lifesteal chance only applies once per enemy.'
   },
   spiderQueen: {
     name: 'Spider Queen',
@@ -189,7 +189,7 @@ export const ballInformation: Record<Balls, BallInfo> = {
   swamp: {
     name: 'Swamp',
     description:
-      'Leaves behind tar blobs over time. Enemies who walk into tar blobs are dealt 15-30, are slowed by 50% for 7 seconds and gain 1 stack of poison (max 8 stacks). Each stack of poison deals 1-3 damage per second. This ball and its tar blobs also deal 6-12 damage to nearby units.'
+      'Leaves behind tar blobs over time. Enemies who walk into tar blobs are dealt 15-30 damage, are slowed by 50% for 7 seconds and gain 1 stack of poison (max 8 stacks). Each stack of poison deals 1-3 damage per second. This ball and its tar blobs also deal 6-12 damage to nearby units.'
   },
   vampireLord: {
     name: 'Vampire Lord',
@@ -262,7 +262,7 @@ export const ballInformation: Record<Balls, BallInfo> = {
     description: 'Passes through enemies.'
   },
   iron: {
-    name: 'iron',
+    name: 'Iron',
     description: 'Deals double damage but moves 40 percent slower.'
   },
   laserHorizontal: {
