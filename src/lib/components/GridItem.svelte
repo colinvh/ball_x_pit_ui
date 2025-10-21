@@ -20,15 +20,29 @@
       .join(" ")
   );
 
-  const tooltipText = $derived(
+  const tooltip = $derived(
     ballKey && ballInformation[ballKey]
       ? `${ballInformation[ballKey].name}: ${ballInformation[ballKey].description}`
-      : ""
+      : undefined
   );
 </script>
 
-<Tooltip text={tooltipText} delay={100}>
+{#if ballKey && ballInformation[ballKey]}
+  <Tooltip delay={100}>
+    <div class={cellClasses} role="gridcell">
+      {@render children()}
+    </div>
+    {#snippet tooltip()}
+      <div class="font-bold text-yellow-400 mb-1">
+        {ballInformation[ballKey].name}
+      </div>
+      <div class="text-sm">
+        {ballInformation[ballKey].description}
+      </div>
+    {/snippet}
+  </Tooltip>
+{:else}
   <div class={cellClasses} role="gridcell">
     {@render children()}
   </div>
-</Tooltip>
+{/if}
