@@ -1,18 +1,16 @@
 <script lang="ts">
-  import { ballInformation } from "../../constants/ballInformation.ts";
-  import { evolutions } from "../../constants/evolutions.ts";
-  import { starterBalls } from "../../constants/starterBalls.ts";
-  import assetMap from "../assetMap.ts";
-  import GridIcon from "./GridIcon.svelte";
-  import GridItem from "./GridItem.svelte";
+import { ballInformation } from '../../constants/ballInformation.ts';
+import { evolutions } from '../../constants/ballEvolutions.ts';
+import { starterBalls } from '../../constants/starterBalls.ts';
+import assetMap from '../assetMap.ts';
+import GridIcon from './GridIcon.svelte';
+import GridItem from './GridItem.svelte';
 
-  const { gridSize } = $props();
+const { gridSize } = $props();
 
-  const grid = $derived(
-    Array.from({ length: gridSize }, (_, y) =>
-      Array.from({ length: gridSize }, (_, x) => ({ x, y }))
-    )
-  );
+const grid = $derived(
+  Array.from({ length: gridSize }, (_, y) => Array.from({ length: gridSize }, (_, x) => ({ x, y })))
+);
 </script>
 
 <div class="overflow-x-auto w-full">

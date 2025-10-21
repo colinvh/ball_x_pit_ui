@@ -1,23 +1,20 @@
 <script lang="ts">
-  import { ballInformation } from "../../constants/ballInformation.ts";
-  import {
-    advancedEvolutions,
-    multipleAdvancedEvolutions,
-  } from "../../constants/evolutions.js";
-  import assetMap from "../assetMap.js";
-  import GridIcon from "./GridIcon.svelte";
-  import GridItem from "./GridItem.svelte";
+import { ballInformation } from '../../constants/ballInformation.ts';
+import { advancedEvolutions, multipleAdvancedEvolutions } from '../../constants/ballEvolutions.ts';
+import assetMap from '../assetMap.ts';
+import GridIcon from './GridIcon.svelte';
+import GridItem from './GridItem.svelte';
 
-  const allAdvancedEvolutions = [
-    ...advancedEvolutions.map((evolution) => ({
-      components: evolution.slice(0, -1),
-      result: evolution[evolution.length - 1],
-    })),
-    ...multipleAdvancedEvolutions.map((evolution) => ({
-      components: evolution.slice(0, -1),
-      result: evolution[evolution.length - 1],
-    })),
-  ];
+const allAdvancedEvolutions = [
+  ...advancedEvolutions.map((evolution) => ({
+    components: evolution.slice(0, -1),
+    result: evolution[evolution.length - 1]
+  })),
+  ...multipleAdvancedEvolutions.map((evolution) => ({
+    components: evolution.slice(0, -1),
+    result: evolution[evolution.length - 1]
+  }))
+];
 </script>
 
 <div class="mt-8 w-full">

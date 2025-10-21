@@ -1,7 +1,7 @@
 <script lang="ts">
-  import "../app.css";
+import '../app.css';
 
-  let { children } = $props();
+let { children } = $props();
 </script>
 
 <div class="min-h-screen" style="background-color: var(--bg-dark);">

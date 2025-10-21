@@ -1,0 +1,20 @@
+export const starterItems = [
+  'babyRattle',
+  'breastplate',
+  'reachersSpear',
+  'etherealCloak',
+  'everflowingGoblet',
+  'crownOfThorns',
+  'fleetFeet',
+  'warHorn',
+  'corruptedOnion',
+  'deadeyesAmulet',
+  'ghostlyCorset',
+          'vampiricSword',
+  'spikedCollar',
+  'radiantFeather',
+  'diamondHiltedDagger',
+  'emeraldHiltedDagger',
+  'rubyHiltedDagger',
+  'sapphireHiltedDagger'
+];

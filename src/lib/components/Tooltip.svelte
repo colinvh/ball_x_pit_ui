@@ -1,19 +1,19 @@
 <script lang="ts">
-  const { children, tooltip, text, delay = 300 } = $props();
+const { children, tooltip, text, delay = 300 } = $props();
 
-  let showTooltip = $state(false);
-  let timeoutId = $state(null);
+let showTooltip = $state(false);
+let timeoutId = $state(null);
 
-  function handleMouseEnter() {
-    timeoutId = setTimeout(() => {
-      showTooltip = true;
-    }, delay);
-  }
+function handleMouseEnter() {
+  timeoutId = setTimeout(() => {
+    showTooltip = true;
+  }, delay);
+}
 
-  function handleMouseLeave() {
-    if (timeoutId) clearTimeout(timeoutId);
-    showTooltip = false;
-  }
+function handleMouseLeave() {
+  if (timeoutId) clearTimeout(timeoutId);
+  showTooltip = false;
+}
 </script>
 
 <div class="relative inline-block">

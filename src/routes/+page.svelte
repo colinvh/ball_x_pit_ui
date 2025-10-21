@@ -1,11 +1,11 @@
 <script>
-  import AdvancedEvolutions from "$lib/components/AdvancedEvolutions.svelte";
-  import EvolutionGrid from "$lib/components/EvolutionGrid.svelte";
-  import { devLog, env } from "$lib/env.js";
-  import { starterBalls } from "../constants/starterBalls.ts";
+import AdvancedEvolutions from '$lib/components/AdvancedEvolutions.svelte';
+import EvolutionGrid from '$lib/components/EvolutionGrid.svelte';
+import { devLog, env } from '$lib/env.js';
+import { starterBalls } from '../constants/starterBalls.ts';
 
-  // Development logging
-  devLog("Page loaded in development mode", { env: env.all });
+// Development logging
+devLog('Page loaded in development mode', { env: env.all });
 </script>
 
 <svelte:head>
