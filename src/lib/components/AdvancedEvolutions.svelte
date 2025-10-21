@@ -22,30 +22,32 @@ const allAdvancedEvolutions = [
     Advanced Evolutions
   </h2>
 
-  <div class="flex flex-col gap-1">
+  <div class="flex flex-col gap-1 items-center">
     {#each allAdvancedEvolutions as evolution}
-      <div class="flex gap-2 p-2 rounded-lg">
-        {#each evolution.components as component, index}
-          <GridItem ballKey={component}>
+      <div class="w-full overflow-x-auto">
+        <div class="flex items-center gap-2 p-2 rounded-lg justify-center" style="min-width: max-content;">
+          {#each evolution.components as component, index}
+            <GridItem ballKey={component} x={0} y={0}>
+              <GridIcon
+                src={assetMap.ballIcons[component]}
+                alt={ballInformation[component]?.name + " ball"}
+              />
+            </GridItem>
+
+            {#if index < evolution.components.length - 1}
+              <span class="text-2xl font-bold text-white mx-2">+</span>
+            {/if}
+          {/each}
+
+          <span class="text-2xl font-bold text-white mx-4">=</span>
+
+          <GridItem ballKey={evolution.result} x={0} y={0}>
             <GridIcon
-              src={assetMap.ballIcons[component]}
-              alt={ballInformation[component]?.name + " ball"}
+              src={assetMap.ballIcons[evolution.result]}
+              alt={ballInformation[evolution.result]?.name + " ball"}
             />
           </GridItem>
-
-          {#if index < evolution.components.length - 1}
-            <span class="text-2xl font-bold text-white mx-2">+</span>
-          {/if}
-        {/each}
-
-        <span class="text-2xl font-bold text-white mx-4">=</span>
-
-        <GridItem ballKey={evolution.result}>
-          <GridIcon
-            src={assetMap.ballIcons[evolution.result]}
-            alt={ballInformation[evolution.result]?.name + " ball"}
-          />
-        </GridItem>
+        </div>
       </div>
     {/each}
   </div>
