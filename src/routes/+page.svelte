@@ -2,6 +2,7 @@
   import AdvancedEvolutions from "$lib/components/AdvancedEvolutions.svelte";
   import EvolutionChart from "$lib/components/EvolutionChart.svelte";
   import { devLog, env } from "$lib/env.js";
+  import { starterBalls } from "../constants/starterBalls.ts";
 
   // Development logging
   devLog("Page loaded in development mode", { env: env.all });
@@ -71,7 +72,7 @@
   </header>
 
   <section aria-label="Basic Evolution Grid">
-    <EvolutionChart gridSize={16} />
+    <EvolutionChart gridSize={starterBalls.length + 1} />
   </section>
 
   <section aria-label="Advanced Evolutions" class="mb-4">

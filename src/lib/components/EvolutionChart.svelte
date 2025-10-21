@@ -6,7 +6,7 @@
   import GridIcon from "./GridIcon.svelte";
   import GridItem from "./GridItem.svelte";
 
-  const { gridSize = 16 } = $props();
+  const { gridSize } = $props();
 
   const grid = $derived(
     Array.from({ length: gridSize }, (_, y) =>
@@ -15,7 +15,10 @@
   );
 </script>
 
-<div class="grid grid-cols-16 gap-0 w-fit p-2">
+<div
+  class="grid gap-0 w-fit p-2"
+  style="grid-template-columns: repeat({gridSize}, minmax(0, 1fr));"
+>
   {#each grid as row}
     {#each row as cell}
       {@const xBall = starterBalls[cell.x - 1]}
