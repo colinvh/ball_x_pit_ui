@@ -15,9 +15,9 @@ const grid = $derived(
 
 <div class="overflow-x-auto w-full">
   <div
-    class="grid gap-0 p-2 mx-auto"
+    class="grid gap-0 p-2 mx-auto relative"
     style="grid-template-columns: repeat({gridSize}, 3.25rem); width: {gridSize *
-      3.25}rem;"
+      3.25}rem; overflow: visible;"
   >
     {#each grid as row}
       {#each row as cell}
