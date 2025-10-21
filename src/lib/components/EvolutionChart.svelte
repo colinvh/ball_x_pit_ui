@@ -20,7 +20,9 @@
       {@const xBall = starterBalls[cell.x - 1]}
       {@const yBall = starterBalls[cell.y - 1]}
       {@const evolution = evolutions[xBall]?.[yBall]?.evolution}
-      <GridItem x={cell.x} y={cell.y}>
+      {@const currentBall =
+        cell.x === 0 ? yBall : cell.y === 0 ? xBall : evolution}
+      <GridItem x={cell.x} y={cell.y} ballKey={currentBall}>
         {#if cell.x === cell.y}
           <span style="color: var(--yellow); font-size: 2em;">X</span>
         {:else if cell.x === 0}

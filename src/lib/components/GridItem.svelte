@@ -1,5 +1,8 @@
 <script>
-  const { children = null, x, y } = $props();
+  import { ballInformation } from "../../constants/ballInformation.js";
+  import Tooltip from "./Tooltip.svelte";
+
+  const { children = null, x, y, ballKey = null } = $props();
 
   const cellClasses = $derived(
     [
@@ -16,8 +19,16 @@
       .filter(Boolean)
       .join(" ")
   );
+
+  const tooltipText = $derived(
+    ballKey && ballInformation[ballKey]
+      ? `${ballInformation[ballKey].name}: ${ballInformation[ballKey].description}`
+      : ""
+  );
 </script>
 
-<div class={cellClasses} role="gridcell" title="({x}, {y})">
-  {@render children()}
-</div>
+<Tooltip text={tooltipText} delay={100}>
+  <div class={cellClasses} role="gridcell">
+    {@render children()}
+  </div>
+</Tooltip>
