@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { ballInformation } from "../../constants/ballInformation.ts";
   import {
     advancedEvolutions,

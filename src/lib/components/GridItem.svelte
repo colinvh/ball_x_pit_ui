@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { ballInformation } from "../../constants/ballInformation.ts";
   import Tooltip from "./Tooltip.svelte";
   import type { Balls } from "../../types/ballIcons.ts";

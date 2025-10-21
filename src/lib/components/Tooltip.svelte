@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   const { children, tooltip, text, delay = 300 } = $props();
 
   let showTooltip = $state(false);
