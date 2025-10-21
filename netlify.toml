@@ -5,12 +5,6 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Redirect all requests to index.html for SPA routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
 # Optional: Headers for better performance
 [[headers]]
   for = "/assets/*"

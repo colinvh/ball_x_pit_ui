@@ -1,4 +1,6 @@
+# Dependencies
 node_modules
+package-lock.json
 
 # Output
 .output
@@ -23,7 +25,7 @@ Thumbs.db
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-node_modules
+# Deno (no longer used)
+deno.lock
 
-/assets
-/static
+/static/assets
