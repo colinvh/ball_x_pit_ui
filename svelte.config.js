@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -8,12 +8,15 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		// Netlify adapter for deployment
+		// Static adapter for deployment
 		adapter: adapter({
-			// Optional: Configure edge functions
 			edge: false,
-			// Optional: Configure split testing
-			split: false
+			split: false,
+			pages: 'build',
+			assets: 'build',
+			fallback: 'index.html',
+			precompress: false,
+			strict: true
 		})
 	}
 };
