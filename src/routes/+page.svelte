@@ -50,13 +50,18 @@
   </div>
 {/if}
 
-<main class="mt-8 flex flex-col max-w-7xl mx-auto">
-  <header class="text-center mb-4 px-4">
-    <h1 class="text-3xl font-bold mb-4 text-white">BALL x PIT Evolution Chart</h1>
+<main class="flex flex-col max-w-7xl mx-auto">
+  <header class="text-center px-4">
+    <img
+      src="https://influencers.devolverdigital.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdevolver-digital%2Fimage%2Fupload%2Fv1748283936%2Fmothership-payload%2F1748283936628_LOGO_FINAL_CLEAN_WHITE-1_pzxy9y.png&w=1200&q=75"
+      alt="BALL x PIT Logo"
+      class="mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+    />
+    <h1 class="text-xl font-bold mb-4 text-white">Evolution Chart</h1>
     <p class="text-gray-400 max-w-2xl mx-auto">
-      Discover all ball evolution combinations in BALL x PIT with the interactive chart. Hover over
-      any ball to see detailed descriptions. Advanced evolutions are shown alongside or below the
-      chart.
+      Discover all ball and passive evolution combinations in BALL x PIT. Hover over any icon to see
+      descriptions. Site is responsive, so you can see every evolution without scrolling pnon a
+      large enough monitor. You'll have to scroll for smaller devices.
     </p>
   </header>
 
@@ -71,7 +76,7 @@
     </section>
   </div>
 
-  <footer class="mt-4 mb-4 text-center text-xs text-gray-500 max-w-2xl px-4">
+  <footer class="mt-4 mb-4 text-center text-xs text-gray-500 max-w-2xl px-4 mx-auto">
     <p class="mb-2">All ball icons and related imagery are copyrighted material from BALL x PIT.</p>
     <p>
       This is an unofficial fan-made tool and is not affiliated with, endorsed by, or sponsored by
