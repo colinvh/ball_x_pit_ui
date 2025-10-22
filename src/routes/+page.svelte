@@ -51,13 +51,12 @@
 {/if}
 
 <main class="flex flex-col max-w-7xl mx-auto">
-  <header class="text-center px-4">
+  <header class="text-center px-4 mb-4">
     <img
       src="https://influencers.devolverdigital.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdevolver-digital%2Fimage%2Fupload%2Fv1748283936%2Fmothership-payload%2F1748283936628_LOGO_FINAL_CLEAN_WHITE-1_pzxy9y.png&w=1200&q=75"
       alt="BALL x PIT Logo"
-      class="mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+      class="mx-auto max-w-48 sm:max-w-56 md:max-w-64 lg:max-w-72"
     />
-    <h1 class="text-xl font-bold mb-4 text-white">Evolution Chart</h1>
     <p class="text-gray-400 max-w-2xl mx-auto">
       Discover all ball and passive evolution combinations in BALL x PIT. Hover over any icon to see
       descriptions. Site is responsive, so you can see every evolution without scrolling on a large
