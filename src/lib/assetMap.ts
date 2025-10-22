@@ -3,264 +3,264 @@ import { dev } from '$app/environment';
 export const assetMap = {
   ballIcons: {
     berserk: dev
-      ? '/assets/ball_icon_berserk.png'
+      ? '/src/lib/assets/ball_icon_berserk.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954333/ball_x_pit/ball_icons/ball_icon_berserk.png',
     bleed: dev
-      ? '/assets/ball_icon_bleed.png'
+      ? '/src/lib/assets/ball_icon_bleed.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954334/ball_x_pit/ball_icons/ball_icon_bleed.png',
     bomb: dev
-      ? '/assets/ball_icon_bomb.png'
+      ? '/src/lib/assets/ball_icon_bomb.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954335/ball_x_pit/ball_icons/ball_icon_bomb.png',
     burn: dev
-      ? '/assets/ball_icon_burn.png'
+      ? '/src/lib/assets/ball_icon_burn.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954336/ball_x_pit/ball_icons/ball_icon_burn.png',
     earthquake: dev
-      ? '/assets/ball_icon_earthquake.png'
+      ? '/src/lib/assets/ball_icon_earthquake.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954338/ball_x_pit/ball_icons/ball_icon_earthquake.png',
     flash: dev
-      ? '/assets/ball_icon_flash.png'
+      ? '/src/lib/assets/ball_icon_flash.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954339/ball_x_pit/ball_icons/ball_icon_flash.png',
     hemorrhage: dev
-      ? '/assets/ball_icon_hemorrhage.png'
+      ? '/src/lib/assets/ball_icon_hemorrhage.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954343/ball_x_pit/ball_icons/ball_icon_hemorrhage.png',
     inferno: dev
-      ? '/assets/ball_icon_inferno.png'
+      ? '/src/lib/assets/ball_icon_inferno.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954346/ball_x_pit/ball_icons/ball_icon_inferno.png',
     iron: dev
-      ? '/assets/ball_icon_iron.png'
+      ? '/src/lib/assets/ball_icon_iron.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954346/ball_x_pit/ball_icons/ball_icon_iron.png',
     nuclearBomb: dev
-      ? '/assets/ball_icon_nuclear_bomb.png'
+      ? '/src/lib/assets/ball_icon_nuclear_bomb.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954357/ball_x_pit/ball_icons/ball_icon_nuclear_bomb.png',
     poison: dev
-      ? '/assets/ball_icon_poison.png'
+      ? '/src/lib/assets/ball_icon_poison.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954359/ball_x_pit/ball_icons/ball_icon_poison.png',
     sacrifice: dev
-      ? '/assets/ball_icon_sacrifice.png'
+      ? '/src/lib/assets/ball_icon_sacrifice.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954361/ball_x_pit/ball_icons/ball_icon_sacrifice.png',
     shotgun: dev
-      ? '/assets/ball_icon_shotgun.png'
+      ? '/src/lib/assets/ball_icon_shotgun.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954363/ball_x_pit/ball_icons/ball_icon_shotgun.png',
     wrath: dev
-      ? '/assets/ball_icon_wrath.png'
+      ? '/src/lib/assets/ball_icon_wrath.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954372/ball_x_pit/ball_icons/ball_icon_wrath.png',
     dark: dev
-      ? '/assets/ball_icon_dark.png'
+      ? '/src/lib/assets/ball_icon_dark.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954337/ball_x_pit/ball_icons/ball_icon_dark.png',
     light: dev
-      ? '/assets/ball_icon_light.png'
+      ? '/src/lib/assets/ball_icon_light.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954350/ball_x_pit/ball_icons/ball_icon_light.png',
     lightning: dev
-      ? '/assets/ball_icon_lightning.png'
+      ? '/src/lib/assets/ball_icon_lightning.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954351/ball_x_pit/ball_icons/ball_icon_lightning.png',
     wind: dev
-      ? '/assets/ball_icon_wind.png'
+      ? '/src/lib/assets/ball_icon_wind.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954372/ball_x_pit/ball_icons/ball_icon_wind.png',
     sun: dev
-      ? '/assets/ball_icon_sun.png'
+      ? '/src/lib/assets/ball_icon_sun.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954367/ball_x_pit/ball_icons/ball_icon_sun.png',
     blizzard: dev
-      ? '/assets/ball_icon_blizzard.png'
+      ? '/src/lib/assets/ball_icon_blizzard.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954334/ball_x_pit/ball_icons/ball_icon_blizzard.png',
     freeze: dev
-      ? '/assets/ball_icon_freeze.png'
+      ? '/src/lib/assets/ball_icon_freeze.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954340/ball_x_pit/ball_icons/ball_icon_freeze.png',
     freezeRay: dev
-      ? '/assets/ball_icon_freeze_ray.png'
+      ? '/src/lib/assets/ball_icon_freeze_ray.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954340/ball_x_pit/ball_icons/ball_icon_freeze.png',
     frozenFlame: dev
-      ? '/assets/ball_icon_frozen_flame.png'
+      ? '/src/lib/assets/ball_icon_frozen_flame.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954341/ball_x_pit/ball_icons/ball_icon_frozen_flame.png',
     glacier: dev
-      ? '/assets/ball_icon_glacier.png'
+      ? '/src/lib/assets/ball_icon_glacier.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954342/ball_x_pit/ball_icons/ball_icon_glacier.png',
     holyLaser: dev
-      ? '/assets/ball_icon_holy_laser.png'
+      ? '/src/lib/assets/ball_icon_holy_laser.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954344/ball_x_pit/ball_icons/ball_icon_holy_laser.png',
     laserBeam: dev
-      ? '/assets/ball_icon_laser_beam.png'
+      ? '/src/lib/assets/ball_icon_laser_beam.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954347/ball_x_pit/ball_icons/ball_icon_laser_beam.png',
     laserHorizontal: dev
-      ? '/assets/ball_icon_laser_horizontal.png'
+      ? '/src/lib/assets/ball_icon_laser_horizontal.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954348/ball_x_pit/ball_icons/ball_icon_laser_horizontal.png',
     laserVertical: dev
-      ? '/assets/ball_icon_laser_vertical.png'
+      ? '/src/lib/assets/ball_icon_laser_vertical.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954349/ball_x_pit/ball_icons/ball_icon_laser_vertical.png',
     radiationBeam: dev
-      ? '/assets/ball_icon_radiation_beam.png'
+      ? '/src/lib/assets/ball_icon_radiation_beam.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954360/ball_x_pit/ball_icons/ball_icon_radiation_beam.png',
     cell: dev
-      ? '/assets/ball_icon_cell.png'
+      ? '/src/lib/assets/ball_icon_cell.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954336/ball_x_pit/ball_icons/ball_icon_cell.png',
     eggSac: dev
-      ? '/assets/ball_icon_egg_sac.png'
+      ? '/src/lib/assets/ball_icon_egg_sac.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954338/ball_x_pit/ball_icons/ball_icon_egg_sac.png',
     magma: dev
-      ? '/assets/ball_icon_magma.png'
+      ? '/src/lib/assets/ball_icon_magma.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954354/ball_x_pit/ball_icons/ball_icon_magma.png',
     overgrowth: dev
-      ? '/assets/ball_icon_overgrowth.png'
+      ? '/src/lib/assets/ball_icon_overgrowth.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954358/ball_x_pit/ball_icons/ball_icon_overgrowth.png',
     sandstorm: dev
-      ? '/assets/ball_icon_sandstorm.png'
+      ? '/src/lib/assets/ball_icon_sandstorm.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954361/ball_x_pit/ball_icons/ball_icon_sandstorm.png',
     storm: dev
-      ? '/assets/ball_icon_storm.png'
+      ? '/src/lib/assets/ball_icon_storm.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954365/ball_x_pit/ball_icons/ball_icon_storm.png',
     swamp: dev
-      ? '/assets/ball_icon_swamp.png'
+      ? '/src/lib/assets/ball_icon_swamp.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954367/ball_x_pit/ball_icons/ball_icon_swamp.png',
     voluptuousEggSac: dev
-      ? '/assets/ball_icon_voluptuous_egg_sac.png'
+      ? '/src/lib/assets/ball_icon_voluptuous_egg_sac.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954370/ball_x_pit/ball_icons/ball_icon_voluptuous_egg_sac.png',
     broodMother: dev
-      ? '/assets/ball_icon_brood_mother.png'
+      ? '/src/lib/assets/ball_icon_brood_mother.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954335/ball_x_pit/ball_icons/ball_icon_brood_mother.png',
     darkAssassin: dev
-      ? '/assets/ball_icon_dark_assassin.png'
+      ? '/src/lib/assets/ball_icon_dark_assassin.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954336/ball_x_pit/ball_icons/ball_icon_dark_assassin.png',
     ghost: dev
-      ? '/assets/ball_icon_ghost.png'
+      ? '/src/lib/assets/ball_icon_ghost.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954341/ball_x_pit/ball_icons/ball_icon_ghost.png',
     incubus: dev
-      ? '/assets/ball_icon_incubus.png'
+      ? '/src/lib/assets/ball_icon_incubus.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954344/ball_x_pit/ball_icons/ball_icon_incubus.png',
     leech: dev
-      ? '/assets/ball_icon_leech.png'
+      ? '/src/lib/assets/ball_icon_leech.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954349/ball_x_pit/ball_icons/ball_icon_leech.png',
     maggot: dev
-      ? '/assets/ball_icon_maggot.png'
+      ? '/src/lib/assets/ball_icon_maggot.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954353/ball_x_pit/ball_icons/ball_icon_maggot.png',
     mosquitoSwarm: dev
-      ? '/assets/ball_icon_mosquito_swarm.png'
+      ? '/src/lib/assets/ball_icon_mosquito_swarm.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761011974/ball_icon_mosquito_swarm_erfffn.png',
     mosquitoKing: dev
-      ? '/assets/ball_icon_mosquito_king.png'
+      ? '/src/lib/assets/ball_icon_mosquito_king.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954355/ball_x_pit/ball_icons/ball_icon_mosquito_king.png',
     nosferatu: dev
-      ? '/assets/ball_icon_nosferatu.png'
+      ? '/src/lib/assets/ball_icon_nosferatu.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954355/ball_x_pit/ball_icons/ball_icon_nosferatu.png',
     phantom: dev
-      ? '/assets/ball_icon_phantom.png'
+      ? '/src/lib/assets/ball_icon_phantom.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954359/ball_x_pit/ball_icons/ball_icon_phantom.png',
     satan: dev
-      ? '/assets/ball_icon_satan.png'
+      ? '/src/lib/assets/ball_icon_satan.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954362/ball_x_pit/ball_icons/ball_icon_satan.png',
     soulSucker: dev
-      ? '/assets/ball_icon_soul_sucker.png'
+      ? '/src/lib/assets/ball_icon_soul_sucker.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954364/ball_x_pit/ball_icons/ball_icon_soul_sucker.png',
     spiderQueen: dev
-      ? '/assets/ball_icon_spider_queen.png'
+      ? '/src/lib/assets/ball_icon_spider_queen.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954364/ball_x_pit/ball_icons/ball_icon_spider_queen.png',
     succubus: dev
-      ? '/assets/ball_icon_succubus.png'
+      ? '/src/lib/assets/ball_icon_succubus.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954366/ball_x_pit/ball_icons/ball_icon_succubus.png',
     vampire: dev
-      ? '/assets/ball_icon_vampire.png'
+      ? '/src/lib/assets/ball_icon_vampire.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954369/ball_x_pit/ball_icons/ball_icon_vampire.png',
     vampireLord: dev
-      ? '/assets/ball_icon_vampire_lord.png'
+      ? '/src/lib/assets/ball_icon_vampire_lord.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954369/ball_x_pit/ball_icons/ball_icon_vampire_lord.png',
     blackHole: dev
-      ? '/assets/ball_icon_black_hole.png'
+      ? '/src/lib/assets/ball_icon_black_hole.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954333/ball_x_pit/ball_icons/ball_icon_black_hole.png',
     flicker: dev
-      ? '/assets/ball_icon_flicker.png'
+      ? '/src/lib/assets/ball_icon_flicker.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954339/ball_x_pit/ball_icons/ball_icon_flicker.png',
     charm: dev
-      ? '/assets/ball_icon_charm.png'
+      ? '/src/lib/assets/ball_icon_charm.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954351/ball_x_pit/ball_icons/ball_icon_love_charm.png',
     lovestruck: dev
-      ? '/assets/ball_icon_lovestruck.png'
+      ? '/src/lib/assets/ball_icon_lovestruck.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954352/ball_x_pit/ball_icons/ball_icon_lovestruck.png',
     noxious: dev
-      ? '/assets/ball_icon_noxious.png'
+      ? '/src/lib/assets/ball_icon_noxious.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954356/ball_x_pit/ball_icons/ball_icon_noxious.png',
     virus: dev
-      ? '/assets/ball_icon_virus.png'
+      ? '/src/lib/assets/ball_icon_virus.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954370/ball_x_pit/ball_icons/ball_icon_vrius.png',
     lightningRod: dev
-      ? '/assets/ball_pit_lightning_rod.png'
+      ? '/src/lib/assets/ball_pit_lightning_rod.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1760954373/ball_x_pit/ball_icons/ball_pit_lightning_rod.png',
   },
   passiveIcons: {
     warHorn: dev
-      ? '/assets/warHorn.png'
+      ? '/src/lib/assets/warHorn.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105455/ball_x_pit/ball_icons/warHorn.png',
     babyRattle: dev
-      ? '/assets/babyRattle.png'
+      ? '/src/lib/assets/babyRattle.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105456/ball_x_pit/ball_icons/babyRattle.png',
     cornucopia: dev
-      ? '/assets/cornucopia.png'
+      ? '/src/lib/assets/cornucopia.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105446/ball_x_pit/ball_icons/cornucopia.png',
     wretchedOnion: dev
-      ? '/assets/wretchedOnion.png'
+      ? '/src/lib/assets/wretchedOnion.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761106450/ball_x_pit/ball_icons/wretchedOnion.png',
     breastplate: dev
-      ? '/assets/breastplate.png'
+      ? '/src/lib/assets/breastplate.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105455/ball_x_pit/ball_icons/breastplate.png',
     odiferousShell: dev
-      ? '/assets/odiferousShell.png'
+      ? '/src/lib/assets/odiferousShell.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105449/ball_x_pit/ball_icons/odiferousShell.png',
     reachersSpear: dev
-      ? '/assets/reachersSpear.png'
+      ? '/src/lib/assets/reachersSpear.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761106450/ball_x_pit/ball_icons/reachersSpear.png',
     deadeyesAmulet: dev
-      ? '/assets/deadeyesAmulet.png'
+      ? '/src/lib/assets/deadeyesAmulet.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761106507/ball_x_pit/ball_icons/deadeyesAmulet.png',
     graciousImpaler: dev
-      ? '/assets/graciousImpaler.png'
+      ? '/src/lib/assets/graciousImpaler.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105446/ball_x_pit/ball_icons/graciousImpaler.png',
     etherealCloak: dev
-      ? '/assets/etherealCloak.png'
+      ? '/src/lib/assets/etherealCloak.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105453/ball_x_pit/ball_icons/etherealCloak.png',
     ghostlyCorset: dev
-      ? '/assets/ghostlyCorset.png'
+      ? '/src/lib/assets/ghostlyCorset.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105453/ball_x_pit/ball_icons/ghostlyCorset.png',
     phantomRegalia: dev
-      ? '/assets/phantomRegalia.png'
+      ? '/src/lib/assets/phantomRegalia.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105447/ball_x_pit/ball_icons/phantomRegalia.png',
     everflowingGoblet: dev
-      ? '/assets/everflowingGoblet.png'
+      ? '/src/lib/assets/everflowingGoblet.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105454/ball_x_pit/ball_icons/everflowingGoblet.png',
     vampiricSword: dev
-      ? '/assets/vampiricSword.png'
+      ? '/src/lib/assets/vampiricSword.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105453/ball_x_pit/ball_icons/vampiricSword.png',
     soulReaver: dev
-      ? '/assets/soulReaver.png'
+      ? '/src/lib/assets/soulReaver.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105451/ball_x_pit/ball_icons/soulReaver.png',
     crownOfThorns: dev
-      ? '/assets/crownOfThorns.png'
+      ? '/src/lib/assets/crownOfThorns.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105456/ball_x_pit/ball_icons/crownOfThorns.png',
     spikedCollar: dev
-      ? '/assets/spikedCollar.png'
+      ? '/src/lib/assets/spikedCollar.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105451/ball_x_pit/ball_icons/spikedCollar.png',
     tormentorsMask: dev
-      ? '/assets/tormentorsMask.png'
+      ? '/src/lib/assets/tormentorsMask.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105452/ball_x_pit/ball_icons/tormentorsMask.png',
     fleetFeet: dev
-      ? '/assets/fleetFeet.png'
+      ? '/src/lib/assets/fleetFeet.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105455/ball_x_pit/ball_icons/fleetFeet.png',
     radiantFeather: dev
-      ? '/assets/radiantFeather.png'
+      ? '/src/lib/assets/radiantFeather.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761106509/ball_x_pit/ball_icons/radiantFeather.png',
     wingsOfTheAnointed: dev
-      ? '/assets/wingsOfTheAnointed.png'
+      ? '/src/lib/assets/wingsOfTheAnointed.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105447/ball_x_pit/ball_icons/wingsOfTheAnnointed.png',
     diamondHiltedDagger: dev
-      ? '/assets/diamondHiltedDagger.png'
+      ? '/src/lib/assets/diamondHiltedDagger.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105448/ball_x_pit/ball_icons/diamondHiltedDagger.png',
     emeraldHiltedDagger: dev
-      ? '/assets/emeraldHiltedDagger.png'
+      ? '/src/lib/assets/emeraldHiltedDagger.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105448/ball_x_pit/ball_icons/emeraldHiltedDagger.png',
     rubyHiltedDagger: dev
-      ? '/assets/rubyHiltedDagger.png'
+      ? '/src/lib/assets/rubyHiltedDagger.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105450/ball_x_pit/ball_icons/rubyHiltedDagger.png',
     sapphireHiltedDagger: dev
-      ? '/assets/sapphireHiltedDagger.png'
+      ? '/src/lib/assets/sapphireHiltedDagger.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105450/ball_x_pit/ball_icons/sapphireHiltedDagger.png',
     deadeyesCross: dev
-      ? '/assets/deadeyesCross.png'
+      ? '/src/lib/assets/deadeyesCross.png'
       : 'https://res.cloudinary.com/dnmknegr2/image/upload/v1761105451/ball_x_pit/ball_icons/deadeyesCross.png',
   },
 };
