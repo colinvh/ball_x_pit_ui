@@ -26,14 +26,16 @@
   }));
 </script>
 
-<div class="mt-8 w-full">
-  <h2 class="text-xl font-bold mb-6 text-white text-center">Advanced Ball Evolutions</h2>
+<div class="w-full">
+  <h2 class="text-xl font-bold mb-6 text-white text-center xl:text-left">
+    Advanced Ball Evolutions
+  </h2>
 
-  <div class="flex flex-col gap-1 items-center">
+  <div class="flex flex-col gap-1 items-center xl:items-start">
     {#each allAdvancedEvolutions as evolution}
       <div class="w-full overflow-x-auto">
         <div
-          class="flex items-center gap-2 p-2 rounded-lg justify-center"
+          class="flex items-center gap-2 p-2 rounded-lg justify-center xl:justify-start"
           style="min-width: max-content;"
         >
           {#each evolution.components as component, index}
@@ -63,13 +65,15 @@
   </div>
 
   <!-- Passive Evolutions Section -->
-  <h2 class="text-xl font-bold mb-6 mt-8 text-white text-center">Passive Evolutions</h2>
+  <h2 class="text-xl font-bold mb-6 mt-8 text-white text-center xl:text-left">
+    Passive Evolutions
+  </h2>
 
-  <div class="flex flex-col gap-1 items-center">
+  <div class="flex flex-col gap-1 items-center xl:items-start">
     {#each allItemEvolutionsFormatted as evolution}
       <div class="w-full overflow-x-auto">
         <div
-          class="flex items-center gap-2 p-2 rounded-lg justify-center"
+          class="flex items-center gap-2 p-2 rounded-lg justify-center xl:justify-start"
           style="min-width: max-content;"
         >
           {#each evolution.components as component, index}

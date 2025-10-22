@@ -55,17 +55,21 @@
     <h1 class="text-3xl font-bold mb-4 text-white">BALL x PIT Evolution Chart</h1>
     <p class="text-gray-400 max-w-2xl mx-auto">
       Discover all ball evolution combinations in BALL x PIT with the interactive chart. Hover over
-      any ball to see detailed descriptions. Advanced evolutions are below the chart.
+      any ball to see detailed descriptions. Advanced evolutions are shown alongside or below the
+      chart.
     </p>
   </header>
 
-  <section aria-label="Basic Evolution Grid">
-    <EvolutionGrid gridSize={starterBalls.length + 1} />
-  </section>
+  <!-- Responsive layout: side-by-side on large screens, stacked on small screens -->
+  <div class="flex flex-col xl:flex-row xl:gap-8 xl:items-start xl:justify-center">
+    <section aria-label="Basic Evolution Grid" class="xl:flex-shrink-0">
+      <EvolutionGrid gridSize={starterBalls.length + 1} />
+    </section>
 
-  <section aria-label="Advanced Evolutions" class="mb-4">
-    <AdvancedEvolutions />
-  </section>
+    <section aria-label="Advanced Evolutions" class="mb-4 xl:max-w-lg xl:flex-shrink-0">
+      <AdvancedEvolutions />
+    </section>
+  </div>
 
   <footer class="mt-4 mb-4 text-center text-xs text-gray-500 max-w-2xl px-4">
     <p class="mb-2">All ball icons and related imagery are copyrighted material from BALL x PIT.</p>
