@@ -60,8 +60,8 @@
     <h1 class="text-xl font-bold mb-4 text-white">Evolution Chart</h1>
     <p class="text-gray-400 max-w-2xl mx-auto">
       Discover all ball and passive evolution combinations in BALL x PIT. Hover over any icon to see
-      descriptions. Site is responsive, so you can see every evolution without scrolling pnon a
-      large enough monitor. You'll have to scroll for smaller devices.
+      descriptions. Site is responsive, so you can see every evolution without scrolling on a large
+      enough monitor. You'll have to scroll for smaller devices.
     </p>
   </header>
 
