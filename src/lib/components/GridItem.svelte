@@ -1,41 +1,43 @@
 <script lang="ts">
-import { ballInformation } from '../../constants/ballInformation.ts';
-import type { Balls } from '../../types/balls.ts';
-import Tooltip from './Tooltip.svelte';
+  import { ballInformation } from '../../constants/ballInformation.ts';
+  import type { Balls } from '../../types/balls.ts';
+  import type { Items } from '../../types/items.ts';
+  import Tooltip from './Tooltip.svelte';
 
-const {
-  children = null,
-  x,
-  y,
-  ballKey = null
-}: {
-  children?: any;
-  x: number;
-  y: number;
-  ballKey?: Balls | null;
-} = $props();
+  const {
+    children = null,
+    x,
+    y,
+    ballKey = null,
+  }: {
+    children?: any;
+    x: number;
+    y: number;
+    ballKey?: Balls | null;
+    itemKey?: Items | null;
+  } = $props();
 
-const cellClasses = $derived(
-  [
-    'p-0.5',
-    'w-13 h-13',
-    'flex items-center justify-center',
-    'transition-all duration-200',
-    'select-none',
-    'text-sm font-medium',
-    'border border-[var(--border-dark)]',
-    'hover:bg-[var(--bg-dark-hover)]',
-    children ? 'text-gray-800' : 'text-gray-400'
-  ]
-    .filter(Boolean)
-    .join(' ')
-);
+  const cellClasses = $derived(
+    [
+      'p-0.5',
+      'w-13 h-13',
+      'flex items-center justify-center',
+      'transition-all duration-200',
+      'select-none',
+      'text-sm font-medium',
+      'border border-[var(--border-dark)]',
+      'hover:bg-[var(--bg-dark-hover)]',
+      children ? 'text-gray-800' : 'text-gray-400',
+    ]
+      .filter(Boolean)
+      .join(' ')
+  );
 
-const tooltip = $derived(
-  ballKey && ballInformation[ballKey]
-    ? `${ballInformation[ballKey].name}: ${ballInformation[ballKey].description}`
-    : undefined
-);
+  const tooltip = $derived(
+    ballKey && ballInformation[ballKey]
+      ? `${ballInformation[ballKey].name}: ${ballInformation[ballKey].description}`
+      : undefined
+  );
 </script>
 
 {#if ballKey && ballInformation[ballKey]}
@@ -52,8 +54,8 @@ const tooltip = $derived(
       </div>
     {/snippet}
   </Tooltip>
-{:else}
+{:else if itemKey && ballInformation[itemKey]}{:else}
   <div class={cellClasses} role="gridcell">
-   {@render children()}
+    {@render children()}
   </div>
 {/if}

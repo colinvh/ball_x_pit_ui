@@ -1,16 +1,16 @@
-import type { Balls } from '../types/balls.ts';
+import type { Balls, StarterBalls } from '../types/balls.ts';
 
 export const advancedEvolutions: [Balls, Balls, Balls][] = [
   ['bomb', 'poison', 'nuclearBomb'],
   ['incubus', 'succubus', 'satan'],
-  ['dark', 'sun', 'blackHole']
+  ['dark', 'sun', 'blackHole'],
 ];
 
 export const multipleAdvancedEvolutions: [Balls, Balls, Balls, Balls][] = [
-  ['vampireLord', 'mosquitoKing', 'spiderQueen', 'nosferatu']
+  ['vampireLord', 'mosquitoKing', 'spiderQueen', 'nosferatu'],
 ];
 
-export const basicEvolutions: [Balls, Balls, Balls][] = [
+export const basicEvolutions: [StarterBalls, StarterBalls, Balls][] = [
   ['bleed', 'broodMother', 'leech'],
   ['bleed', 'charm', 'berserk'],
   ['bleed', 'dark', 'sacrifice'],
@@ -61,7 +61,7 @@ export const basicEvolutions: [Balls, Balls, Balls][] = [
   ['laserVertical', 'light', 'laserBeam'],
   ['light', 'lightning', 'flash'],
   ['lightning', 'wind', 'storm'],
-  ['poison', 'wind', 'noxious']
+  ['poison', 'wind', 'noxious'],
 ];
 
 function buildEvolutionMap() {

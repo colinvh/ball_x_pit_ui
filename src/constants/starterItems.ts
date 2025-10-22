@@ -1,3 +1,5 @@
+import type { Items } from '../types/items.ts';
+
 export const starterItems = [
   'babyRattle',
   'breastplate',
@@ -16,5 +18,7 @@ export const starterItems = [
   'diamondHiltedDagger',
   'emeraldHiltedDagger',
   'rubyHiltedDagger',
-  'sapphireHiltedDagger'
-];
+  'sapphireHiltedDagger',
+  'wretchedOnion',
+  'ghostlyCorset',
+] as const satisfies Items[];

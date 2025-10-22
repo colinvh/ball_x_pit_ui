@@ -15,7 +15,7 @@ export const env = {
   nodeEnv: import.meta.env.NODE_ENV || 'development',
 
   // All Vite environment variables
-  all: import.meta.env
+  all: import.meta.env,
 };
 
 // Development-only console logging

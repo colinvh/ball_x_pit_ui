@@ -13,7 +13,7 @@ The ball icon images (`/static/assets/`) used in this application are from the v
 
 ### Disclaimer
 
-This is an unofficial fan-made tool and is not affiliated with, endorsed by, or sponsored by the creators or publishers of BALL x PIT. 
+This is an unofficial fan-made tool and is not affiliated with, endorsed by, or sponsored by the creators or publishers of BALL x PIT.
 
 If you are a copyright holder and would like these assets removed, please contact [your-contact-info].
 

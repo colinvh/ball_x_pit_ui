@@ -11,7 +11,7 @@ See [ASSETS.md](./ASSETS.md) for full copyright and attribution information.
 ## Features
 
 - Interactive evolution grid showing starter balls and combinations
-- Advanced evolution formulas with visual representations  
+- Advanced evolution formulas with visual representations
 - Detailed tooltips with ball descriptions
 - Responsive design with hover effects
 
