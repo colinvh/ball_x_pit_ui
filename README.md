@@ -2,6 +2,10 @@
 
 An interactive evolution chart for the video game BALL x PIT, showing details about balls and passives and their resulting evolutions.
 
+## Live Site
+
+https://ballxpit.netlify.app/
+
 ## ⚠️ Asset Notice
 
 **Important**: This project uses game assets from BALL x PIT. These assets are NOT owned by this project's creators.

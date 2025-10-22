@@ -1,5 +1,5 @@
 <script>
-  import AdvancedEvolutions from '$lib/components/AdvancedEvolutions.svelte';
+  import NonGridEvolutions from '$lib/components/NonGridEvolutions.svelte';
   import EvolutionGrid from '$lib/components/EvolutionGrid.svelte';
   import { devLog, env } from '$lib/env.js';
   import { starterBalls } from '../constants/starterBalls.ts';
@@ -9,10 +9,10 @@
 </script>
 
 <svelte:head>
-  <title>BALL x PIT Evolution Chart - Complete Guide to Ball Combinations & Evolutions</title>
+  <title>BALL x PIT Evolution Chart - Complete Guide to Ball and Passive Evolutions</title>
   <meta
     name="description"
-    content="Interactive evolution chart for BALL x PIT showing all ball combinations, advanced evolutions, and transformation recipes. Discover how to evolve balls in BALL x PIT with detailed tooltips and visual guides."
+    content="Interactive evolution chart for BALL x PIT showing all ball and passive evolutions. Discover how to evolve balls in BALL x PIT with detailed tooltips and visual guides."
   />
   <meta
     name="keywords"
@@ -60,18 +60,17 @@
     <p class="text-gray-400 max-w-2xl mx-auto">
       Discover all ball and passive evolution combinations in BALL x PIT. Hover over any icon to see
       descriptions. Site is responsive, so you can see every evolution without scrolling on a large
-      enough monitor. You'll have to scroll for smaller devices.
+      enough monitor. You'll have to scroll down on smaller devices.
     </p>
   </header>
 
-  <!-- Responsive layout: side-by-side on large screens, stacked on small screens -->
   <div class="flex flex-col xl:flex-row xl:gap-8 xl:items-start xl:justify-center">
     <section aria-label="Basic Evolution Grid" class="xl:flex-shrink-0">
       <EvolutionGrid gridSize={starterBalls.length + 1} />
     </section>
 
     <section aria-label="Advanced Evolutions" class="mb-4 xl:max-w-lg xl:flex-shrink-0">
-      <AdvancedEvolutions />
+      <NonGridEvolutions />
     </section>
   </div>
 
